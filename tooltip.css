@@ -1,0 +1,208 @@
+/* For Tooltip on hover over images */
+.gallery {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.gallery .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 103%;
+    left: 50%;
+    margin-left: -100px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.gallery .tooltiptext::after {
+	content: "";
+	position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.gallery:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.footer{
+    padding: 2rem;
+    background: #263238;
+    color: #f4f4f4;
+    text-align: center;
+}
+.social-media-links i{
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+    color: aliceblue;
+    padding-top: 6px;
+}
+
+ .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .features{
+    padding: 10rem 0;
+}
+
+.box{
+    width: 33.3333333%;
+    padding: 2rem;
+    float: left;
+    text-align: center;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.308);
+}
+
+.box-1,.box-3{
+    background-color: #263238;
+    color: #f4f4f4;
+}
+
+.box-2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #f4f4f4;
+}
+
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fa-route,.fa-snowboarding{
+    color: #ee4758;
+    padding: 1rem;
+    margin-bottom: 0.3em;
+}
+
+.fa-rupee-sign{
+    padding: 1rem;
+    margin-bottom: 0.3em;
+}
+
+.md-heading{
+    margin-bottom: 1em;
+}
+@media (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-content .main-heading{
+        display: none;
+    }
+
+    .site-desc{
+        max-width: 40rem;
+    }
+
+    .row{
+        height:auto;
+    }
+
+    .row h2{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-soon p,
+    .contact-soon a{
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .contact-soon a{
+        margin-top: 2rem;
+    }
+
+    .form-wrapper .company-address
+    {
+        float:none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        font: none;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1222px)
+{
+    html{
+        font-size: 60%;
+    }
+    .row{
+        height: auto;
+        position: relative;
+    }
+    .row1 .img-box
+    {
+        position: absolute;
+    }
+
+    .row2 .img-box
+    {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media(orientation: landscape) and (max-height:500px)
+{
+    .header{
+        height: 90vmax;
+    }
+}

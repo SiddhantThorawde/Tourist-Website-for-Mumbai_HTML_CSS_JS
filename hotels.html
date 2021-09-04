@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/mum.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/tooltip.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Home page for Mumbai" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.55" />
+	<meta name="theme-color" content="#303030" />
+	 <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7f257b9379.js" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> Enable this for enabling sliding images on homepage -->
+	<link rel="shortcut icon" href="assets/icons/mumbai.ico" />
+	<title>M U M B A I</title>
+  <link rel="stylesheet" href="assets/css/mum.css" />
+</head>
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #343a40;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  li {
+    float: right;
+  }
+
+  li a,
+  .photos {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  li a:hover,
+  .photos:hover .photos {
+    background-color: #0277bd;
+    border-radius: none;
+    color: white;
+  }
+
+  li.photos {
+    display: inline-block;
+  }
+
+  .dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #424242;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown1-content a:hover {
+    background-color: #0277bd;
+    color: white;
+  }
+
+  .dropdown1:hover .dropdown1-content {
+    display: block;
+  }
+
+  .dropdown1-content a {
+    background-color: #ffffff;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  li.left {
+    float: left;
+  }
+
+  /* Material icons */
+  .material-icons.md-18 {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-right: 2px;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .material-icons.md-18.md-light {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .col-container {
+    display: table;
+    width: 100%;
+
+    position: static;
+  }
+
+  .col {
+    display: table-cell;
+    padding: 5px;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  img {
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  li.dropdown1:hover {
+    background-color: #0277bd;
+  }
+
+  div.panel-body {
+    padding-left: 15px;
+    padding-right: 45px;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .col {
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      margin-left: 55px;
+    }
+
+    .navbar {
+      width: 110%;
+    }
+
+    .footr {
+      width: 110%;
+    }
+
+    .container {
+      margin-left: 30px;
+    }
+  }
+</style>
+
+<body style="color: #777">
+  <!-- Navigation Bar on Top of Page along with icons from Google-->
+
+  <ul class="navbar" id="myTopnav" style="font-family: Lato">
+   
+    <li>
+      <a href="contact.html">
+        <i class="material-icons md-18 md-light">developer_mode</i> Contact</a>
+    </li>
+    <li>
+      <a href="index.html#maps">
+        <i class="material-icons md-18 md-light">map</i> MAP</a>
+    </li>
+    <li class="dropdown1" style="display: inline-block">
+      <a href="index.html" class="photos">
+        <i class="material-icons md-18 md-light">location_city</i> MUMBAI</a>
+      <div class="dropdown1-content">
+        <a href="history.html" target="_blank">
+          <i class="material-icons md-18">event_note</i> HISTORY</a>
+       
+        <a href="tourist.html" target="_blank">
+          <i class="material-icons md-18">local_activity</i> TOURIST PLACES</a>
+        <a href="shopping.html" target="_blank">
+          <i class="material-icons md-18">shopping_cart</i> SHOPPING</a>
+        <a href="hotels.html" target="_blank">
+          <i class="material-icons md-18">hotel</i> HOTELS</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#home"><i class="material-icons md-18 md-light">home</i> HOME</a>
+    </li>
+    <li class="left"><a href="index.html">MUMBAI</a></li>
+  </ul>
+
+  <!-- Body Container for all data -->
+  <div class="container">
+    <br />
+    <h1 style="text-align: center; font-weight: bold">
+      BEST HOTELS IN MUMBAI
+    </h1>
+    <br />
+
+    <!-- Accordion for collapsible div elements -->
+    <div class="panel-group" id="accordion">
+      <!-- 7 star Hotels -->
+      <div class="panel panel-default">
+        <div class="panel-heading" style="background-color: #0d47a1; border-radius: 6px">
+          <h4 class="panel-title" style="text-align: center">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+              style="color: #fff; font-weight: bolder; font-family: Lato">
+              <h2>7 Star Hotels</h2>
+            </a>
+          </h4>
+        </div>
+
+        <!-- Collapsible division for 7 Star Hotels. In lets the 7 Star div open 1st on page loading. -->
+        <div id="collapse1" class="panel-collapse collapse in">
+          <!-- Hotels Data begins from here -->
+          <div class="panel-body">
+            <div class="col-container" id="jwmarriott">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  JW MARRIOTT
+                </h3>
+                <img src="img/JW-Marriott-Mumbai-Juhu.jpeg" alt="JW MARRIOTT" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  Nestled along the beach, JW Marriott Mumbai Juhu is a 5-star
+                  haven where luxury reigns supreme. Upscale comfort awaits in
+                  stylishly appointed hotel rooms and suites, showcasing
+                  featherbed mattresses, chic décor, high-speed internet,
+                  marble bathrooms and 24-hour room service. Thrill your
+                  palate with diverse fine dining at our distinctive
+                  restaurants and bars. Energize in our well-equipped fitness
+                  center and refresh in the sparkling waters of our outdoor
+                  infinity and salt-water pools. Celebrate and succeed in
+                  flexible event spaces, masterfully designed for flawless
+                  meetings, conferences and social affairs in Mumbai. After a
+                  day of business, shopping or lounging on Juhu Beach, soothe
+                  your senses with a luxury massage, beauty or wellness
+                  therapy at our 5-star Quan Spa. Frequented by celebrities
+                  and Bollywood luminaries, our hotel is one of Mumbai's most
+                  elegant destinations, perfectly placed along the glittering
+                  Arabian Sea.<br /><br />
+                  <b>Address:</b> Juhu Tara Road, Mumbai, Maharashtra
+                  400049.<br />
+                  <b>Phone:</b> 022 6693 3000
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-body">
+            <div class="col-container" id="saharastar">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  SAHARA STAR
+                </h3>
+                <img src="img/sahara.jpg" alt="SAHARA STAR" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  Sahara Star, the flagship hotel of Sahara India Pariwar, is
+                  one of India’s most desirable destinations.Located in
+                  Mumbai, Hotel Sahara Star, a 354 room property, offers
+                  spacious accommodation with a private balcony and views of
+                  the tropical lagoon. Its 5-star facilities include 5 food
+                  and beverage destinations and an inimitable journey.
+                  Complimentary WiFi throughout the property and airport
+                  transfers are provided to and fro Mumbai Airport Terminal 1.
+                  Featuring modern décor and floor-to-ceiling windows, rooms
+                  at Sahara Star are fitted with a seating area and
+                  flat-screen TV. A bathtub and hot shower are in the private
+                  bathroom.<br /><br />
+                  <b>Address:</b> Opp.Chhatrapati Shivaji Airport Terminal
+                  1(Domestic), Vile Parle East, Vile Parle, Mumbai,
+                  Maharashtra 400099.<br />
+                  <b>Phone:</b> 022 3989 5000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of collapse1 of 7 star hotels -->
+      </div>
+      <!-- End of panel of 7 star hotels -->
+
+      <!-- 5 Star Hotels -->
+      <div class="panel panel-default">
+        <div class="panel-heading" style="background-color: rgb(245, 10, 10); border-radius: 6px">
+          <h4 class="panel-title" style="text-align: center">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"
+              style="color: #fff; font-weight: bolder; font-family: Lato">
+              <h2>5 Star Hotels</h2>
+            </a>
+          </h4>
+        </div>
+
+        <!-- Collapsible division for 5 Star Hotels. Sice, no In, the 5 Star div doesn't open 1st on page loading & remains closed. -->
+        <div id="collapse2" class="panel-collapse collapse">
+          <!-- Hotels Data begins from here -->
+          <div class="panel-body">
+            <div class="col-container" id="tajmahalpalace">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  TAJ MAHAL PALACE
+                </h3>
+                <img src="img/taj mahal.jpg" alt="Taj Mahal Palace Hotel" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  The Taj Mahal Palace is a heritage, five-star, luxury hotel
+                  in the Colaba area of Mumbai, Maharashtra, India, situated
+                  next to the Gateway of India. Built in the Saracenic Revival
+                  style, it opened in 1903 as the Taj Mahal Hotel and has
+                  historically often been known simply as "The Taj". The hotel
+                  is named after the Taj Mahal, which is located in the city
+                  of Agra approximately 1,050 kilometres (650 mi) from Mumbai.
+                  It has been considered one of the finest hotels in the East
+                  since the time of the British Raj. The hotel was one of the
+                  main sites targeted in the 2008 Mumbai attacks. <br />
+
+                  Part of the Taj Hotels Resorts and Palaces, the hotel has
+                  560 rooms and 44 suites and is considered the flagship
+                  property of the group; it employs 1,600 staff. The hotel is
+                  made up of two different structures: the Taj Mahal Palace
+                  and the Tower, which are historically and architecturally
+                  distinct from each other (the Taj Mahal Palace was built in
+                  1903; the Tower was opened in 1972). <br />
+
+                  The hotel has a long and distinguished history, having
+                  received many notable guests, from presidents to captains of
+                  industry and show business stars.<br /><br />
+                  <b>Address:</b>Apollo Bunder, Mumbai, Maharashtra 400001.<br />
+                  <b>Phone</b>: 022 6665 3366
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-body">
+            <div class="col-container" id="tajlandsend">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  TAJ LANDS END
+                </h3>
+                <img src="img/taj lands end.jpg" alt="Taj Land Ends" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  With a view overlooking the Arabian Sea and the Bandra Worli
+                  Sea Link, and located just 200 m from the seafront, Taj
+                  Lands End features award-winning traditional Indian spa
+                  treatments, an outdoor pool and 5 dining options. Taj Lands
+                  End is 6 km from Shivaji Park and 8.3 km from Bandra Kurla
+                  Complex. It is 7.3 km from Juhu Beach. Mumbai International
+                  Airport is 10.2 km away. It offers easy access to the city's
+                  business and entertainment spots. <br />
+
+                  For leisure, Taj Lands End has a fully equipped health club
+                  and a state-of-the-art salon. Alternatively, guests can also
+                  enjoy a beautiful blend of rejuvenating massages and
+                  signature treatments rooted in Indian Aromatherapies at the
+                  renowned Jiva Spa. A visit to the sauna rooms and yoga
+                  sessions compliment the experience..<br /><br />
+                  <b>Address:</b> Bandstand Fort, Byramji Jeejeebhoy Road,
+                  Bandra West, Mumbai, Maharashtra 400050.<br />
+                  <b>Phone</b>: 022 6668 1234
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-body">
+            <div class="col-container" id="orchid">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  ORCHID
+                </h3>
+                <img src="img/orchid.jpg" alt="Orchid" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  Located beside the Santa Cruz Domestic Airport, The Orchid
+                  Hotel offers rooms with cable TV. It features a rooftop
+                  pool, a 24-hour coffee shop and free airport transfers from
+                  the domestic airport (terminal 1B) only. Mumbai
+                  International Airport is 9 km away. <br>
+                  Rooms at the Orchid come with a minibar and tea/coffee maker. A work desk with internet connection is
+                  available in each room. Free water bottles are provided at the property<br /><br />
+                  <b>Address:</b> 70-C, Nehru Road, Near Mumbai Domestic
+                  Airport, Vile Parle (E), Mumbai, Maharashtra 400099.<br />
+                  <b>Phone:</b> 022 2616 4000
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-body">
+            <div class="col-container" id="oberoi">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  OBEROI HOTEL
+                </h3>
+                <img src="img/oberoi.jpg" alt="Oberoi Hotel" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  The Oberoi, Mumbai is a striking example of modern architecture that lifts you up over Marine Drive to
+                  enjoy magnificent views of the ocean and 'Queen’s Necklace' lights along the shoreline. Only at the
+                  best 5 star hotel in Mumbai. <br>
+
+                  Spacious accommodation, fine cuisines and our genuine hospitality are complemented by a range of
+                  services for all guests; with special care taken for single lady travellers at the best hotel in
+                  Mumbai. We aim to ensure that your stay with us will be as comfortable, convenient and pleasant as can
+                  be.<br /><br />
+                  <b>Address:</b> 216, Netaji Subhash Chandra Bose Rd,
+                  Churchgate, Mumbai, Maharashtra 400021.<br />
+                  <b>Phone:</b> 022 6632 5757
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-body">
+            <div class="col-container" id="trident">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  TRIDENT HOTEL
+                </h3>
+                <img src="img/trident.jpg" alt="Trident Hotel" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  The Oberoi, Mumbai is a striking example of modern architecture that lifts you up over Marine Drive to
+                  enjoy magnificent views of the ocean and 'Queen’s Necklace' lights along the shoreline. Only at the
+                  best 5 star hotel in Mumbai. <br>
+
+                  Spacious accommodation, fine cuisines and our genuine hospitality are complemented by a range of
+                  services for all guests; with special care taken for single lady travellers at the best hotel in
+                  Mumbai. We aim to ensure that your stay with us will be as comfortable, convenient and pleasant as can
+                  be.
+                  <br /><br />
+                  <b>Address:</b> C 56, G Block, Bandra Kurla Complex, Mumbai,
+                  Maharashtra 400098.<br />
+                  <b>Phone:</b> 022 6672 7777
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-body">
+            <div class="col-container" id="courtyard">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  COURTYARD MARRIOTT
+                </h3>
+                <img src="img/courtyard.jpg" alt="Courtyard" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  Perfectly situated in Andheri East, Courtyard Mumbai International Airport offers 4-star comfort and
+                  an ideal location. Travelers love our hotel's seamless access to the city's premier local attractions
+                  and business hub, including events at the Bandra Kurla Complex. Organize events, from lavish weddings
+                  to training sessions, in the hotel's sophisticated indoor and picturesque outdoor venues. Reinvigorate
+                  with a massage or wellness treatments at our spa, take a dip in the outdoor pool or work out in our
+                  gym. Afterward, indulge in creative<br /><br />
+                  <b>Address:</b> CTS 215, Opposite Sangam BIG Cinemas,
+                  Andheri Kurla Road, Andheri East, Mumbai, Maharashtra
+                  400059.<br />
+                  <b>Phone:</b> 022 6136 9999
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-body">
+            <div class="col-container" id="holidayinn">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  HOLIDAY INN
+                </h3>
+                <img src="img/holiday inn.jpeg" alt="Holiday Inn" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  Enjoy the peaceful ambience of our uncluttered, glass-walled lobby before checking into your modern
+                  guest room. Stay at the contemporary Holiday Inn Mumbai International Airport for easy access to the
+                  terminals and north Mumbai businesses. From this accommodation near Mumbai airport, you can see planes
+                  jet off from the runway and the Hiranandani Garden district's skyscraper skyline from the hotel's
+                  rooftop swimming pool. Our ballroom can hold up to 500 people for your reception or
+                  conference<br /><br />
+                  <b>Address:</b> Near Sakinaka Metro Station, Sakinaka
+                  Junction, Andheri Kurla Road, Andheri East, Mumbai,
+                  Maharashtra 400072.<br />
+                  <b>Phone:</b> 022 4085 1800
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="panel-body">
+            <div class="col-container" id="grandhyatt">
+              <div class="col">
+                <h3 style="
+                      padding: 0px 10px;
+                      text-align: center;
+                      font-weight: bold;
+                    ">
+                  GRAND HYATT
+                </h3>
+                <img src="img/hyatt.jpg" alt="Grand Hyatt" style="width: 500px; height: 300px" />
+              </div>
+
+              <div class="col">
+                <br />
+                <p style="padding: 0px 0px 0px 30px">
+                  Grand Hyatt Mumbai is a contemporary lifestyle destination
+                  spread across 12 acres of greenery in the Santacruz/ Kalina
+                  area of Mumbai, offering the convenience you require from
+                  luxury airport hotels. Experience extraordinary moments of
+                  more in Mumbai with multiple dining options, extensive
+                  leisure facilities, meeting rooms for business travellers,
+                  an international shopping plaza & a host of rejuvenating and
+                  recreational facilities.<br /><br />
+                  <b>Address:</b> Bandra Kurla Complex Vicinity, Off Western
+                  Express Highway, Santacruz East, Mumbai, Maharashtra
+                  400055.<br />
+                  <b>Phone:</b> 022 4942 5361
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of collapse1 of 5 star hotels -->
+      </div>
+      <!-- End of panel of 5 star hotels -->
+    </div>
+    <!-- End of Accordion for collapsible div elements -->
+  </div>
+  <!-- End of Body Container for all data -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-media-links">
+			<a href="https://www.facebook.com/siddhant.thorawde"><i class="fab fa-facebook fa-4x"></i></a>
+			<a href="https://twitter.com/SIDDHANTTHORAW1"><i class="fab fa-twitter fa-4x"></i></a>
+			<a href="https://www.instagram.com/siddhant_thorawde/"><i class="fab fa-instagram fa-4x"></i></a>
+			<a href="https://www.linkedin.com/in/siddhant-thorawde-760a3121b/"><i class="fab fa-linkedin fa-4x"></i></a>
+		</div>
+        <p class="text-white footer-text text-color">
+			Copyright &copy; 2021 Siddhant Thorawde . Design:
+			<a href="#" class="footer-link">Siddhant Thorawde</a>
+		</p>
+    </footer>
+
+	<!-- Scroll to Top Button Reference -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<button onclick="scrollToTop()" id="myBtn" title="Go to top">
+		&#x25B2;
+	</button>
+	<script src="assets/javascript/myJavaScript.js"></script>
+
+	
+</body>
+
+</html>
